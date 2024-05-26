@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+img,
+video {
+  object-fit: cover;
+}
+
+body {
+  display: flex;
+  padding: 20px;
+  height: 100vh;
+}
+
+/*sidebar*/
+
+.left-section {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  transition: all .3s ease;
+}
+
+.left-section .logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.left-section .logo img {
+  width: 30px;
+  height: 30px;
+}
+
+.left-section .logo a {
+  font-weight: 500;
+  color: #464646;
+}
+
+.left-section .sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 16p;
+}
+
+.left-section .sidebar .item, 
+.left-section .sign-out .item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.left-section .sidebar .item i,
+.left-section .sign-out .item i {
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 12px;
+  transition: all .3s ease;
+}
+
+.left-section .sidebar .item h3,
+.left-section .sign-out .item h3 {
+  font-weight: 800;
+  font-size: 14px;
+  transition: all .3s ease;
+}
+
+.left-section .sidebar .item.active i {
+  background-color: #fed24d;
+}
+
+.left-section .sidebar .item.active h3 {
+  color: #fed24d;
+}
+
+.main {
+  flex: 5;
+  margin-left: 180px;
+  transition: all .3s ease;
+}
+
+.main .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-right: 2px solid #e5e5e5;
+}
