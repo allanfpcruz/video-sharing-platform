@@ -234,10 +234,14 @@ body {
   transition: all .3s ease;
 }
 
-.main .separator .categories a.active,
-.main .separator .categories a:hover {
+.main .separator .categories a.active{
   background: #15333a;
   color: #fff;
+}
+
+.main .separator .categories a:not(.active):hover {
+  background: #e5e5e5;
+  color: #000;
 }
 
 /*video items*/
