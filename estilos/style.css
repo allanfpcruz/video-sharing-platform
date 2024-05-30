@@ -148,7 +148,7 @@ body {
 /*banner*/
 
 .main .banner {
-  width: 90%;
+  width: 100%;
   height: 320px;
   position: relative;
   display: flex;
@@ -157,7 +157,7 @@ body {
 }
 
 .main .banner video {
-  width: 100%;
+  width: 90%;
   height: 100%;
   border-radius: 18px;
   cursor: pointer;
@@ -171,7 +171,7 @@ body {
 
 .main .banner .share {
   position: absolute;
-  right: 16px;
+  right: 7%;
   top: 20px;
 }
 
@@ -187,7 +187,7 @@ body {
   position: absolute;
   color: #fff;
   bottom: 0;
-  width: 100%;
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -547,4 +547,59 @@ body {
 .right-section .weekly .item .content .info .view i {
   font-weight: 500;
   color: #555;
+}
+
+@media screen and (max-width: 1320px) {
+  /*não vi necessidade*/
+}
+
+@media screen and (max-width: 1200px) {
+
+  .left-section .logo a,
+  .left-section .sidebar h3,
+  .left-section .sign-out h3,
+  .right-section .weekly .item:last-child {
+    display: none;
+  } 
+
+  .left-section .logo {
+    justify-content: center;
+  }
+
+  .main {
+    margin-left: 60px;
+    flex: 2;
+  }
+
+  .main .video-items .item .like {
+    font-size: 20px;
+    right: 15px;
+    top: 15px;
+  }
+
+  .main .video-items .item .details > h3,
+  .main .video-items .item .details .info .location i,
+  .main .video-items .item .details .info .rate i {
+    font-size: 15px;
+  }
+
+  .main .video-items .item .details .info .location h5,
+  .main .video-items .item .details .info .rate h5,
+  .right-section .player .content .info > h5 {
+    font-size: 13px;
+  }
+
+  .right-section {
+    flex: 1;
+  }
+
+  .right-section .weekly .item .content img {
+    max-width: 80px;
+    height: 55px;
+  }
+
+  .right-section .weekly .item .content .info h4 {
+    font-size: 14px;
+  }
+
 }
