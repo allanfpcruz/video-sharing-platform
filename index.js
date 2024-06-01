@@ -22,8 +22,6 @@ sidebarItems.forEach(sidebarItem => {
     sidebarItem.classList.add('active')
   })
 })
-
-//handle categorie item on click 
 catItems.forEach(catItem => {
   catItem.addEventListener('click', () => {
     catItems.forEach(item => {
@@ -31,4 +29,15 @@ catItems.forEach(catItem => {
     })
     catItem.classList.add('active')
   })
+})
+
+//move sidebar on small devices scroll
+window.addEventListener('scroll', () => {
+  if(window.innerWidth <= 992) {
+    if(this.pageYOffset > 40) {
+      sidebar.style.paddingTop = '20px'
+    } else {
+      sidebar.style.paddingTop = '75px'
+    }
+  }
 })

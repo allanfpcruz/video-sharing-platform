@@ -232,6 +232,7 @@ body {
   border-radius: 12px;
   font-size: 14px;
   transition: all .3s ease;
+  cursor: pointer;
 }
 
 .main .separator .categories a.active{
@@ -602,4 +603,120 @@ body {
     font-size: 14px;
   }
 
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    flex-direction: column;
+  }
+
+  .left-section {
+    padding-top: 75px;
+  }
+
+  .main {
+    margin-top: 50px;
+  }
+
+  .main .header {
+    border-right: none;
+  }
+
+  .right-section {
+    padding-left: 70px;
+  }
+
+  .right-section .profile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .right-section .weekly .item:last-child {
+    display: flex;
+  }
+
+  .right-section .playlist > video {
+    height: 340px;
+  }
+
+  .right-section .playlist .other img {
+    height: 70px;
+  }
+
+  .right-section .player .content .desc {
+    display: block;
+  }
+
+  .right-section .weekly {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .right-section .weekly .item {
+    width: 48%;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .main .banner .video-info .item:first-child,
+  .main .separator .categories a:nth-child(even),
+  .main .separator .categories a:nth-last-child(1) {
+    display: none;
+  }
+
+  .main .banner .video-info .item h3 {
+    font-size: 13px;
+  }
+
+  .main .video-items {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .main .video-items .item {
+    width: 100%;
+  }
+
+  .main .video-items .item video {
+    height: 240px;
+  }
+
+  .main .video-items .item .details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+  }
+
+  .main .video-items .item .details .info {
+    margin-top: 0;
+  }
+
+  .main .video-items .item .details > h3 {
+    font-size: 17px;
+  }
+
+  .main .video-items .item .details .info .location i,
+  .main .video-items .item .details .info .rate i {
+    font-size: 20px;
+  }
+
+  .right-section .weekly .item {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .right-section .weekly .item {
+    width: 100%;
+  }
+
+  .right-section .player .content .desc {
+    display: none;
+  }
 }
